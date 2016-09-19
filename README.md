@@ -15,7 +15,7 @@ $ bower install --save gifvideo
 `Gifvideo` can be used as a CommonJS module, AMD (with Require.js) or as a plain old Javacript global.
 
 ## Usage
-Make sure you have a `&lt;video%gt;` element with a `src` and `poster` attribute (or the relevant `source` tags).
+Make sure you have a `<video>` element with a `src` and `poster` attribute (or the relevant `source` tags).
 
 Then
 ```
