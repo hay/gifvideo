@@ -38,11 +38,10 @@
         addCss(video);
 
         // Now, on iOS < 10 we need the trick, otherwise we can simply use the
-        // webkit-playsinline property
+        // playsinline property
         // To detect that, we do a feature detect on a CSS property that was
         // only added in iOS 10 Safari
         if ('object-position' in document.head.style) {
-            video.setAttribute('webkit-playsinline', '');
             video.setAttribute('playsinline', '');
             video.setAttribute('muted', '');
             video.play();

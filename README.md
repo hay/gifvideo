@@ -1,7 +1,7 @@
 # Gifvideo
 > Play videos inline on iOS, just like GIF files
 
-This library does only thing: it plays muted looping video files inline, also on iOS (even older versions).
+This library does only thing: it plays muted looping video files inline, also on iOS (even older versions). Basically, what you can do with GIF files, but without the large file size and a maximum of 256 colors.
 
 ## Install
 Using `npm`:
@@ -18,6 +18,10 @@ $ bower install --save gifvideo
 
 ## Usage
 Make sure you have a `<video>` element with a `src` and `poster` attribute (or the relevant `source` tags).
+
+```
+<video src="cat.mp4" poster="cat.jpg"></video>
+```
 
 Then
 ```
