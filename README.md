@@ -1,6 +1,8 @@
 # Gifvideo
 > Play videos inline on iOS, just like GIF files
 
+This library does only thing: it plays muted looping video files inline, also on iOS (even older versions).
+
 ## Install
 Using `npm`:
 ```
