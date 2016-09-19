@@ -1,0 +1,25 @@
+{
+  "name": "gifvideo",
+  "version": "0.1.0",
+  "description": "Play videos inline on iOS Safari, just like GIF files",
+  "main": "gifvideo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hay/gifvideo.git"
+  },
+  "keywords": [
+    "gif",
+    "video",
+    "ios",
+    "movie"
+  ],
+  "author": "Hay Kranen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hay/gifvideo/issues"
+  },
+  "homepage": "https://github.com/hay/gifvideo#readme"
+}

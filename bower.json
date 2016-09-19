@@ -1,0 +1,23 @@
+{
+  "name": "gifvideo",
+  "description": "Play videos inline on iOS Safari, just like GIF files",
+  "main": "gifvideo.js",
+  "authors": [
+    "Hay Kranen"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "gif",
+    "video",
+    "ios",
+    "movie"
+  ],
+  "homepage": "https://github.com/hay/gifvideo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
