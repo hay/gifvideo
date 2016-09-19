@@ -32,4 +32,6 @@ For an example see `test.html`.
 Returns the element you've given in the constructor.
 
 ## License
+`Gifvideo` is based on the method used in `[iphone-inline-video](https://github.com/bfred-it/iphone-inline-video)` coded by [Federico Brigante](https://github.com/bfred-it).
+
 MIT © [Hay Kranen](http://www.haykranen.nl)
