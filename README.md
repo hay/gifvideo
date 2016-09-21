@@ -30,7 +30,7 @@ var gifvideo = new Gifvideo(document.querySelector('video'));
 
 That's it. Note that `Gifvideo` only accepts HTML elements, no selector strings.
 
-For an example see `test.html`.
+For example see the `examples` folder.
 
 ## API
 
