@@ -30,12 +30,12 @@
             }.bind(this));
         },
 
-        addCss : function(el) {
+        addCss : function() {
             // Removes the play button on iOS < 10
             //
             // Add something to use for the selector
             var id = 'v' + String(Math.random()).slice(3);
-            el.setAttribute(id, '');
+            this.element.setAttribute(id, '');
 
             var css = document.createElement('style');
             css.type = 'text/css';
@@ -67,6 +67,8 @@
 
         // The ugly hack for iOS < 10
         scrubVideo : function() {
+            var video = this.element;
+
             var start;
             var previousTime;
             video.load();
