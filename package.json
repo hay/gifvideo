@@ -1,6 +1,6 @@
 {
   "name": "gifvideo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Play videos inline on iOS Safari, just like GIF files",
   "main": "gifvideo.js",
   "scripts": {
