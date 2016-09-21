@@ -4,12 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            width: 150px;
+            height: 150px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
     <video src="cat.mp4" poster="cat.jpg"></video>
+    <video src="cat2.mp4" poster="cat.jpg"></video>
+    <video src="cat.mp4" poster="cat.jpg"></video>
+    <video src="cat2.mp4" poster="cat.jpg"></video>
+    <video src="cat.mp4" poster="cat.jpg"></video>
+    <video src="cat2.mp4" poster="cat.jpg"></video>
+
     <script src="gifvideo.js"></script>
     <script>
-        var gifvideo = new Gifvideo(document.querySelector('video'));
+        // Activate Gifvideo on all videos
+        var videos = document.querySelectorAll('video');
+
+        videos = [].slice.call(videos).map(function(v) {
+            return new Gifvideo(v);
+        });
     </script>
 </body>
 </html>
