@@ -30,6 +30,15 @@ For an example see `test.html`.
 
 ## API
 
+### Gifvideo(element, options)
+Constructor. `options` is an optional object with these options and defaults:
+```
+{
+    alwaysScrub : false, // Always use 'scrub' on iOS, even if > 9
+    debug : false        // Log debug information to console
+}
+```
+
 ### .getElement()
 Returns the element you've given in the constructor.
 

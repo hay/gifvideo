@@ -7,16 +7,28 @@
         'autoplay'
     ];
 
-    function Gifvideo(element) {
+    var defaultOpts = {
+        alwaysScrub : false, // Always use 'scrub' on iOS, even if > 9
+        debug : false // Log statements to console
+    };
+
+    function Gifvideo(element, opts) {
         if (typeof element !== 'object') {
             throw new Error("Gifvideo: invalid element given");
         }
 
+        opts = opts || defaultOpts;
+
+        for (var key in defaultOpts) {
+            this[key] = key in opts ? opts[key] : defaultOpts[key];
+        }
+
+        this.log('Initialized Gifvideo with', element, opts);
         this.element = element;
         this.addAttributes();
         this.element.play();
 
-        if (this.isIos() && !this.isNewerIos()) {
+        if (this.isIos() && (!this.isNewerIos() || this.alwaysScrub)) {
             // Here come the hacks
             this.addCss();
             this.scrubVideo();
@@ -65,8 +77,16 @@
             return 'object-position' in document.head.style;
         },
 
+        log : function() {
+            if (this.debug) {
+                console.log.apply(console, arguments);
+            }
+        },
+
         // The ugly hack for iOS < 10
         scrubVideo : function() {
+            this.log("Scrubbing video");
+
             var video = this.element;
 
             var start;
